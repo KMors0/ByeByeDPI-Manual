@@ -2,9 +2,9 @@
 
 # ByeByeDPI from cover to cover
 
-This guide provides detailed information about the _**ByeByeDPI**_ application. It addresses common questions and offers a comprehensive overview of various methods to bypass DPI (Deep Packet Inspection) across different devices and systems.
+This guide provides detailed information about the _**ByeByeDPI**_. It addresses common questions and offers a comprehensive overview of various methods to bypass DPI (Deep Packet Inspection) across different devices and systems.
 
-For a complete list of all known strategies, check out the [list](ALL.TXT). You can find strategies with the no-domain argument in the [list](no_domain.txt).
+For a complete list of all known strategies, check this [list](ALL.TXT). You can find strategies with the no-domain argument in the [list](no_domain.txt).
 
 ## Table of Contents
 
