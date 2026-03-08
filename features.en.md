@@ -552,9 +552,9 @@ In strategy you can using files from you file system.
 For using a file system need give ByeByeDPI acsess for using file system:
 
 - Open ByeByeDPI settings
-  - <img src="images/bbd-settings-down-en.jpg" width="200">
+  - <img src="images/bbd-settings-en.jpg" width="200">
 - Press "Storage acsess" button
-  - <img src="images/storage-acsess-button-en.jpg" width="200">
+  - <img src="images/acsess-storage-button-en.jpg" width="200">
 - Activate tumbler
   - <img src="images/acsess-storage-toggle-en.jpg" width="200">
   
