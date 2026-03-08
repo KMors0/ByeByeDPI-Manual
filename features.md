@@ -16,6 +16,7 @@
     - [Автозапуск ByeByeDPI при запуске YouTube](#youtube-autostart)
 13. [Настройки для работы с AdGuard](#adguard)
 14. [Автообновление](#autoupdate)
+15. [Работа с файлами](#work-with-files)
 
 ## <a id="whitelist-blacklist">Белый и чёрный списки</a>
 
@@ -696,6 +697,9 @@ IP устройства также можно узнать в настройка
 - Приложение добавлено
 	- <img src="images/Pasted image 20250324070610.png" width="200">
 - Чтобы изменить параметры автообновления, необходимо изменить настройки Obtainium.
+
+
+## <a id="work-with-files">Работа с файлами</a>
 
 ---
 
