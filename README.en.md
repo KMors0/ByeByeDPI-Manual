@@ -6,7 +6,7 @@
 
 This guide provides detailed information about the _**ByeByeDPI**_. It addresses common questions and offers a comprehensive overview of various methods to bypass DPI (Deep Packet Inspection) across different devices and systems.
 
-For a complete list of all known strategies, check this [list](ALL.TXT). You can find strategies with the no-domain argument in the [list](no_domain.txt).
+For a complete list of all known strategies, check out this [list](ALL.TXT). You can find strategies with the no-domain argument in the [list](no_domain.txt).
 
 > [!CAUTION]
 > **You using this manual on you at your peril!**
@@ -14,7 +14,7 @@ For a complete list of all known strategies, check this [list](ALL.TXT). You can
 > Authors aren't responsible for:
 > - lossing you data,
 > - breaking you equipment,
-> - нарушение работоспособности сети,
+> - network disruptions,
 > - unstable working services,
 > - blocking by you provider,
 > - involvement you fridge in botnet.
