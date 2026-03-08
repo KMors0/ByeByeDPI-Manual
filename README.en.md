@@ -21,8 +21,8 @@ For a complete list of all known strategies, check this [list](ALL.TXT). You can
 >
 > **Only you responsible for using this manual and software.**
 > 
-> Все инструменты и примеры приводятся исключительно в образовательных целях.
-> Применяйте их осознанно, в рамках закона и только в тех сетях, где у вас есть на это право.
+> All tools and examples are provided only for educational purposes.
+> Use them wisely, within the law, and only on networks where you have the right to do so.
 
 ## Table of Contents
 
