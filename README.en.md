@@ -1,10 +1,28 @@
 [Русский](README.md) | English
 
+[![Donations Page](https://github.com/andry81-cache/gh-content-static-cache/raw/master/common/badges/donate/donate.svg)](https://pay.cloudtips.ru/p/92c754db)
+
 # ByeByeDPI from cover to cover
 
 This guide provides detailed information about the _**ByeByeDPI**_. It addresses common questions and offers a comprehensive overview of various methods to bypass DPI (Deep Packet Inspection) across different devices and systems.
 
 For a complete list of all known strategies, check this [list](ALL.TXT). You can find strategies with the no-domain argument in the [list](no_domain.txt).
+
+> [!CAUTION]
+> **You using this manual on you at your peril!**
+> 
+> Authors aren't responsible for:
+> - lossing you data,
+> - breaking you equipment,
+> - нарушение работоспособности сети,
+> - unstable working services,
+> - blocking by you provider,
+> - involvement you fridge in botnet.
+>
+> **Only you responsible for using this manual and software.**
+> 
+> Все инструменты и примеры приводятся исключительно в образовательных целях.
+> Применяйте их осознанно, в рамках закона и только в тех сетях, где у вас есть на это право.
 
 ## Table of Contents
 
