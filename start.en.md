@@ -87,24 +87,24 @@ Proper settings are required for ByeByeDPI to work effectively:
 
 - Open "Domain Lists"
 
-- Add a list of domains to be tested.
+- Create new domains list to be tested or chose ready.
 
   - <img src="images/settings-8.jpg" width="200">
+  
+  - <img src="images/settings-19.jpg" width="200">
 
 > [!WARNING]
 > If you need to test a list of domains, write each domain on a new line. Do **NOT** separate the list with commas or other characters. Domains should be separated by **NEW LINES** only.
-
-  - <img src="images/settings-19.jpg" width="200">
 
 - Go back to **Proxy Test (Beta)** and click the ‘Start Testing’ button.
 
   - <img src="images/settings-10.jpg" width="200">
 
-- Wait for the selection to complete. If successful, choose strategy with more response. If the test fails, the solution can be found [here](problems.en.md#crash-proxy-test).
+- Wait for the selection to complete. If the test fails, the solution can be found [here](problems.en.md#crash-proxy-test).
 
   - <img src="images/settings-20.jpg" width="200">
 
-- Click on the strategy with the high numbers of response, and select ‘Apply’ from the menu that appears.
+- Click on the strategy with high numbers of response, and select ‘Apply’ from the menu that appears.
 
   - <img src="images/settings-13.jpg" width="200">
 
