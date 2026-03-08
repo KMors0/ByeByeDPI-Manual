@@ -1,13 +1,13 @@
-#  Расширенные настройки
+#  Advanced settings
 
 > [!WARNING]
-> Данные настройки **эксклюзивны** для программы ByeByeDPI! Не следует их принимать как аргументы byedpi и пытаться вставлять в другие программы.
-> В том числе, не следует делиться такими настройками с другими людьми в Сети, так как их значения **очень сильно** зависят от настроек программы ByeByeDPI.
+> This settings is **exclusive** for ByeByeDPI! This isn't arguments for ByeDPI. Don't try using strategy with this settings in another software.
+> Should not be shared strategy with this settings on Network, since their value **very** depends by ByeByeDPI settings.
 
 > [!CAUTION]
-> Данные настройки предназначены для пользователей с пониманием инструмента. Если у вас нет понятия о том, что такое автоподбор, стратегии, параметры, флаги, etc - не следует бездумно тыкать всё подряд. Эта страница вам не поможет.
+> This settings for users with knowledge instrument. If you dont know, what is Proxy Test, strategy, parameters, flags, etc... — should not clicking all. This page don't help you.
 
-### SNI фейк-пакета
+### SNI fake packets
 
 В настройках автоподбора есть функция смены SNI для фейк-пакета. По умолчанию стоит `google.com`, но его можно изменить на любой другой.
 
