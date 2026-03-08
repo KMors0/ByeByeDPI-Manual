@@ -556,7 +556,7 @@ For using a file system need give ByeByeDPI acsess for using file system:
 - Press "Storage acsess" button
   - <img src="images/storage-acsess-button-en.jpg" width="200">
 - Activate tumbler
-  - <img src="images/storage-acsess-tumbler-en.jpg" width="200">
+  - <img src="images/acsess-storage-toggle-en.jpg" width="200">
   
 Now you can use a files on strategy.
 
