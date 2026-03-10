@@ -1,18 +1,18 @@
 1. [Whitelisting and blacklisting](#whitelist-blacklist)
 2. [Command line editor](#editor)
-3. [Display all commands in the test as clickable](#clickable)
-4. [Your list of commands (strategies)](#my-list)
-5. [Exporting and importing settings](#export-import)
-6. [Methods of launching](#launch)
-7. [VPN and Proxy modes](#vpn-proxy)
+3. [Your list of commands (strategies)](#my-list)
+4. [Exporting and importing settings](#export-import)
+5. [Methods of launching](#launch)
+6. [VPN and Proxy modes](#vpn-proxy)
    - [HTTP-proxy mode](#http-proxy)
-1. [Split routing for sites (domains)](#split-tunneling)
-2. [Internet distribution with ByeByeDPI (local proxy)I](#distribute)
-3. [Autorun ByeByeDPI on application startup](#app-autostart)
-4. [Settings for working with AdGuard](#adguard)
-5. [Unlock more services](#more-services)
-6. [Autoupdate](#autoupdate)
-7. [Work with files](#work-with-files)
+7. [Split routing for sites (domains)](#split-tunneling)
+8. [Internet distribution with ByeByeDPI (local proxy)](#distribute)
+9. [Autorun ByeByeDPI on application startup](#app-autostart)
+10. [Settings for working with AdGuard](#adguard)
+11. [Unlock more services](#more-services)
+12. [Autoupdate](#autoupdate)
+13. [Work with files](#work-with-files)
+14. [Lists of domains for Proxy Test](#domain-list)
 
 ## <a id="whitelist-blacklist">Whitelisting and blacklisting</a>
 
@@ -54,39 +54,6 @@ Clicking on a strategy will open a menu with the following options:
 - **Copy action**: copies the strategy to the clipboard.
 - **Delete action**: removes the strategy from the list (history).
 
-## <a id="clickable">Display all commands in the test as clickable</a>
-
-> [!TIP]
-> What is this setting useful for?
-> If you don’t want to wait for the selection to finish because the test has already shown high (50% or more) percentages for several strategies, or if you’re experiencing a selection failure but some strategies in the test show high (50% or more) percentages, this setting can help.
-
-This option can be found in the **Proxy Test (Beta)** settings.
-
-Go to **"Proxy Test (Beta)"**[^1]
-
-- <img src="images/settings-4.jpg" width="200">
-
-- Open **Proxy Test Settings** (gear icon in the top-right).
-
-  - <img src="images/settings-5.jpg" width="200">
-
-- Activate the toggle **Display all commands in the test as clickable**
-
-  - <img src="images/features-7.jpg" width="200">
-
-Now, even if the Proxy Test is interrupted, the list of strategies will be displayed as clickable.
-
-<img src="images/features-9.jpg" width="200">
-
-Clicking on a strategy will open a menu with these options:
-
-<img src="images/features-10.jpg" width="200">
-
-- **Apply action**: applies the command (sets it as the current Command Line Argument).
-
-  - <img src="images/features-4.jpg" width="200">
-
-- **Copy action**: copies the strategy to the clipboard.
 
 ## <a id="my-list">Your list of commands (strategies)</a>
 
@@ -555,7 +522,7 @@ For using a file system need give ByeByeDPI acsess for using file system:
   - <img src="images/bbd-settings-en.jpg" width="200">
 - Press "Storage acsess" button
   - <img src="images/acsess-storage-button-en.jpg" width="200">
-- Activate tumbler
+- Activate toogle
   - <img src="images/acsess-storage-toggle-en.jpg" width="200">
   
 Now you can use a files on strategy.
@@ -565,7 +532,3 @@ Using example: `-f1 -Qm=512 -l:/storage/emulated/0/downloads/g.bin`
 Here used file `g.bin` from folder `downloads`
 
 You can also work with files using arguments like -H. About this can be found in [ByeDPI documentation](https://github.com/hufrea/byedpi).
-
----
-
-[^1]: Team selection is in development. There may be errors. **Strategies are not generated automatically** - they are always the same. In the current implementation, the selection does not actually select anything - it just checks the performance of a set of strategies that have been added to it by the developer.
