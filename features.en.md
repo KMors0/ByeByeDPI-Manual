@@ -12,6 +12,7 @@
 4. [Settings for working with AdGuard](#adguard)
 5. [Unlock more services](#more-services)
 6. [Autoupdate](#autoupdate)
+7. [Work with files](#work-with-files)
 
 ## <a id="whitelist-blacklist">Whitelisting and blacklisting</a>
 
@@ -543,6 +544,27 @@ The application does not implement an auto-update feature. To enable automatic u
 - Addendum added
 	- <img src="images/Pasted image 20250324070610.png" width="200">
 - To change the auto-update settings, you must change the Obtainium settings.
+
+## <a id="work-with-files">Работа с файлами</a>
+
+In strategy you can using files from you file system.
+
+For using a file system need give ByeByeDPI acsess for using file system:
+
+- Open ByeByeDPI settings
+  - <img src="images/bbd-settings-en.jpg" width="200">
+- Press "Storage acsess" button
+  - <img src="images/acsess-storage-button-en.jpg" width="200">
+- Activate tumbler
+  - <img src="images/acsess-storage-toggle-en.jpg" width="200">
+  
+Now you can use a files on strategy.
+
+Using example: `-f1 -Qm=512 -l:/storage/emulated/0/downloads/g.bin`
+
+Here used file `g.bin` from folder `downloads`
+
+You can also work with files using arguments like -H. About this can be found in [ByeDPI documentation](https://github.com/hufrea/byedpi).
 
 ---
 
