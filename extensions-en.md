@@ -1,21 +1,19 @@
 #  Advanced settings
 
 > [!WARNING]
-> This settings is **exclusive** for ByeByeDPI! This isn't arguments for ByeDPI. Don't try using strategy with this settings in another software.
-> Should not be shared strategy with this settings on Network, since their value **very** depends by ByeByeDPI settings.
+> These settings are exclusive to ByeByeDPI! They are not compatible with ByeDPI arguments. Do not attempt to use strategies containing these settings in other software.
+> Do not share strategies using these settings online, as their values depend heavily on your specific ByeByeDPI configuration.
 
 > [!CAUTION]
-> This settings for users with knowledge instrument. If you dont know, what is Proxy Test, strategy, parameters, flags, etc... — should not clicking all. This page don't help you.
+> These settings are intended for advanced users. If you are unfamiliar with terms like Proxy Test, strategies, parameters, or flags, do not change anything. This page will not be helpful to you.
 
-### SNI fake packets
+### SNI for fake packets
+The Proxy Test includes a function to change the SNI for fake packets. It is set to google.com by default, but you can change it.
 
-In proxy test since there function for change SNI on fake packets. By default set `google.com`, but you can change his.
+Changing this only makes sense if you have a well-thought-out bypass method and are certain that your ISP's filter checks packets against an SNI "whitelist."
 
-Changing his make sense if you thought it through by-pass
-methodимеет смысл в случае, если вы правильно продумали метод обхода блокировки и уверены, что ваш фильтр проверяет пакеты на предмет SNI из "Белого списка".
-
-> [!CAUTION]
-> Не следует менять SNI на хост из списка заблокированных (например, youtube.com или googlevideo.com) - это лишь даст фильтру понять, что вы ТОЧНО собираетесь сходить за чем-то заблокированным.
+[!CAUTION]
+Do not change the SNI to a host from a blocked domain list (e.g., youtube.com or googlevideo.com). This will only signal to the filter that you are trying to access a blocked site.
 
 Встроенные стратегии подхватывают SNI из настроек автоматически. Если вы хотите, чтобы ваша стратегия имела поддержку такой функции - вам стоит прописать у флага `-n` параметр `{sni}`, получиться должно так:
 
