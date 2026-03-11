@@ -31,7 +31,7 @@ For a complete list of all known strategies, check out this [list](ALL.TXT). You
 3. [Features](features.en.md)
 4. [Problems and solutions](problems.en.md)
 5. [Other](others.en.md)
-6. [Advanced settings](extensions-en.md)
+6. [Advanced options](extensions-en.md)
 
 If you’re hoping for a one-size-fits-all solution that works simply by clicking _**Connect**_, you’ll find it in the _Other_ section.
 
