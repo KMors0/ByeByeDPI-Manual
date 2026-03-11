@@ -451,14 +451,14 @@ Then, enable the proxy in AdGuard.
 
 ## <a id="more-services">Unlock more services</a>
 
-Go to **Selection Settings**, disable the ‘Add the nearest GoogleVideo to testing’ option, and enable the ‘Use your domain list’ option. Insert your list of domains to test.
+Go to **Proxy Test settings**, open **Domain Lists** and create list with domains of your service. Insert you domains to list.
 
 <img src="images/features-65.jpg" width="200">
 
 Afterward, search for the strategy [in a similar manner](start.en.md#setting) as before.
 
 > [!WARNING]
-> If all strategies show 0%, the resource is likely blocked by IP, and ByeByeDPI cannot help.
+> If all strategies show 0 responses, the service is likely blocked by IP, and ByeByeDPI cannot help.
 
 > [!TIP]
 > Large sites and services may require many domains to function correctly.
@@ -494,7 +494,7 @@ watchanimeattheoffice.com
 
 As you can see, Discord requires more than just `discord.com` to work properly.
 
-For more domain lists, check this [repository](https://github.com/v2fly/domain-list-community) .
+For more domain lists, try check this [repository](https://github.com/v2fly/domain-list-community) .
 
 To identify domains used by a service, you can follow this [guide](https://itdog.info/analiziruem-trafik-i-opredelyaem-domeny-kotorye-ispolzuyut-sajty-i-prilozheniya/)(couldn't find one in English. If you know something, write in the issue) goes into detail about sniffing traffic on various devices and systems.
 For Android, I recommend using **PCAPdroid**. For PC, you can use the browser's developer tools to inspect network traffic.
