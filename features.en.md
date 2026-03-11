@@ -103,7 +103,7 @@ If you’re unsatisfied with the results of the auto-selection and have found co
 
 ## <a id="export-import">Exporting and importing settings</a>
 
-To export or import settings, go to the main settings in **ByeByeDPI** (gear icon in the top-right):
+To export or import settings, go to the main settings in **ByeByeDPI**:
 
   - <img src="images/settings-2.jpg" width="200">
 
