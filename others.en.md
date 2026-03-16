@@ -272,6 +272,8 @@ On iOS, there is [Rumble](https://iklassika.ru/app.php?id=5833) — apparently, 
 
 > One known issue is that the connect button sometimes fails; deleting the VPN application profile helps.
 
+Появилась build by Kiric81. [Link to this build](https://github.com/Kiric81/Rumble/actions). For install need click to link to last action and download artifact in `.zip`. The ZIP contains an .ipa. That file can be installed on iOS.
+
 > [!CAUTION]
 > There is no reliable information about the security of **Rumble**. Install the application at your own risk.
 
