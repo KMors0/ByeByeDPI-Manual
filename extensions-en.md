@@ -2,42 +2,43 @@
 
 > [!WARNING]
 > These settings are **exclusive to ByeByeDPI**! They are not compatible with ByeDPI arguments. Do not attempt to use strategies containing these settings in other software.
-> **Do not share strategies using these settings to Internet**, as their values depend heavily on your specific ByeByeDPI configuration.
+> **Do not share strategies using these settings**, as they're depended heavily on your specific ByeByeDPI configuration.
 
 > [!CAUTION]
-> These settings are intended for advanced users. If you are unfamiliar with terms like Proxy Test, strategies, options, or flags, do not change anything. This page will not be helpful to you.
+> These settings are intended for advanced users. If you are unfamiliar with terms like Proxy Test, strategies, byedpi options and flags, proceed at your own risk. This page will not be helpful to you.
 
 ### SNI for fake packets
-The Proxy Test includes a function to change the SNI for fake packets. It is set to google.com by default, but you can change it.
 
-Changing this only makes sense if you have a well-thought-out bypass method and are certain that your ISP's filter checks packets against an SNI "whitelist."
+The Proxy Test includes a option to change SNI for fake packets. It is set to `google.com` by default, but you can change it.
+
+Changing this only makes sense if you have a well-thought-out bypass method and are certain that your ISP's filter checks packets against an SNI "whitelist".
 
 [!CAUTION]
-> Do not change the SNI to a host from a blocked domain list (youtube.com or googlevideo.com (in Russia)). This will only signal to the filter that you are trying to access a blocked site.
+> Do not change the SNI to a host from a blocked domain list (youtube.com or googlevideo.com (in Russia)). This will let the filter know that you are trying to access a blocked site.
 
-Built-in strategies auto taking SNI from settings. If you want to strategy support this function - you need specify the setting for `-n` flag parameter `{sni}`. Example:
+Built-in strategies are auto taking SNI from settings. If you want for your strategy to be able to support this function - you need to specify the setting for `-n` flag a special parameter `{sni}`, so it'll be like this:
 
 ```
 -n {sni}
 ```
 
-After [transfer](features.md/#my-list) modified strategy to Proxy Test.
+And then [pass](features.md/#my-list) your modified strategy to Proxy Test.
 
-### <a id="replace-proxy-lists">Replace lists for proxy</a>
+### <a id="replace-proxy-lists">Replace lists for routing</a>
 
-In ByeDPI there is filters for proxy, that accept different lists: `-H` and `-j`.
+ByeDPI has routing filters that accept different lists: `-H` and `-j`.
 
-For replace domains/IP to lists need paste by ByeDPI rules. Example:
+To use them correctly, you need to pass them a list of domains or IP-addresses, as specified in byedpi:
 
 ```
 -H:"domain1.com domain2.com domain3.com domain4.com domain5.com ..."
 ```
-For big lists this option may seem is uncomfortable. ByeByeDPI (from version 1.7.3) have a custom option `{list}`.
+For large domain sets this option may seem as uncomfortable. ByeByeDPI (from version 1.7.3) implements a custom option `{list}`.
 
 > [!TIP]
-> This option working and for Proxy Test and for command line. If you apply like these strategy - before sent to ByeDPI strategy changing to readable variation.
+> This option works for Proxy Test and for command line settings. If you apply a strategy with this option, ByeByeDPI will change it to a readible for byedpi variant.
 
-For using this feature need specify ID (name of list, example: Cloudflare from built-in) list of domains/IP from [Proxy Test settings](features-en.md/#domain-list). You can make a custom list and set name. Example:
+To use this feature you need to specify an ID (it is represented as name, for example: Cloudflare from built-in) of list from [Proxy Test settings](features-en.md/#domain-list). You can also make a custom list and set its name. It should be as follows:
 
 ```
 -H:"{list:Cloudflare}"
@@ -47,4 +48,4 @@ or
 ```
 -j:"{list:subnets}"
 ```
-Two working ONLY if in [domains settings](features-en.md/#domain-list) page there list with name `subnets`.
+The second will work ONLY if a list with name `subnets` exists in [domains settings](features-en.md/#domain-list) page.
