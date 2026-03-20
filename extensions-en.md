@@ -16,7 +16,7 @@ Changing this only makes sense if you have a well-thought-out bypass method and 
 [!CAUTION]
 > Do not change the SNI to a host from a blocked domain list (youtube.com or googlevideo.com (in Russia)). This will let the filter know that you are trying to access a blocked site.
 
-Built-in strategies are auto taking SNI from settings. If you want for your strategy to be able to support this function - you need to specify the setting for `-n` flag a special parameter `{sni}`, so it'll be like this:
+Built-in strategies are auto taking SNI from Proxy Test settings. If you want for your strategy to be able to support this function need to specify the setting for `-n` flag a special parameter `{sni}`, so it'll be like this:
 
 ```
 -n {sni}

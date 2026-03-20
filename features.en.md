@@ -1,18 +1,21 @@
 1. [Whitelisting and blacklisting](#whitelist-blacklist)
 2. [Command line editor](#editor)
 3. [Your list of commands (strategies)](#my-list)
-4. [Exporting and importing settings](#export-import)
-5. [Methods of launching](#launch)
-6. [VPN and Proxy modes](#vpn-proxy)
+4. [Lists of domains for Proxy Test](#domain-list)
+5. [Exporting and importing settings](#export-import)
+6. [Methods of launching](#launch)
+7. [VPN and Proxy modes](#vpn-proxy)
    - [HTTP-proxy mode](#http-proxy)
-7. [Split routing for sites (domains)](#split-tunneling)
-8. [Internet distribution with ByeByeDPI (local proxy)](#distribute)
-9. [Autorun ByeByeDPI on application startup](#app-autostart)
-10. [Settings for working with AdGuard](#adguard)
-11. [Unlock more services](#more-services)
-12. [Autoupdate](#autoupdate)
-13. [Work with files](#work-with-files)
-14. [Lists of domains for Proxy Test](#domain-list)
+8. [Split routing for sites (domains)](#split-tunneling)
+9. [Internet distribution with ByeByeDPI (local proxy)](#distribute)
+10. [Autorun ByeByeDPI on application startup](#app-autostart)
+11. [Settings for working with AdGuard](#adguard)
+12. [Unlock more services](#more-services)
+13. [Autoupdate](#autoupdate)
+14. [Work with files](#work-with-files)
+15. [Automation](#automation)
+    - [Auto switch strategy on disconnect/connect to Wi-Fi](#automatic-switching)
+    - [Auto start ByeByeDPI on launch YouTube](#youtube-autostart)
 
 ## <a id="whitelist-blacklist">Whitelisting and blacklisting</a>
 
@@ -512,18 +515,18 @@ The application does not implement an auto-update feature. To enable automatic u
 	- <img src="images/Pasted image 20250324070610.png" width="200">
 - To change the auto-update settings, you must change the Obtainium settings.
 
-## <a id="work-with-files">Работа с файлами</a>
+## <a id="work-with-files">Work with files</a>
 
-In strategy you can using files from you file system.
+You can using files in strategy.
 
-For using a file system need give ByeByeDPI acsess for using file system:
+For using this feature need give ByeByeDPI access for using file system:
 
 - Open ByeByeDPI settings
   - <img src="images/bbd-settings-en.jpg" width="200">
 - Press "Storage acsess" button
-  - <img src="images/acsess-storage-button-en.jpg" width="200">
+  - <img src="images/access-storage-button-en.jpg" width="200">
 - Activate toogle
-  - <img src="images/acsess-storage-toggle-en.jpg" width="200">
+  - <img src="images/access-storage-toggle-en.jpg" width="200">
   
 Now you can use a files on strategy.
 
@@ -531,4 +534,44 @@ Using example: `-f1 -Qm=512 -l:/storage/emulated/0/downloads/g.bin`
 
 Here used file `g.bin` from folder `downloads`
 
-You can also work with files using arguments like -H. About this can be found in [ByeDPI documentation](https://github.com/hufrea/byedpi).
+You can work with files using arguments with support file in strategy. About this can be found in [ByeDPI documentation](https://github.com/hufrea/byedpi).
+
+## <a id="automation">Автоматизация</a>
+
+As default `ToggleActivity` support connect/disconnect ByeByeDPI.
+
+If you [pin](#editor) strategies and [name](#editor), then `ToggleActivity` supporting this parameters:
+
+| Parameter     | Action                                    | Type   |
+| ------------- | ----------------------------------------- | ------ |
+| `strategy`    | Change strategy and launch                | String |
+| `only_update` | Only change strategy (without launch)     | Bool   |
+| `only_start`  | Start ByeByeDPI without                   | Bool   |
+| `only_stop`   | Stop ByeByeDPI                            | Bool   |
+
+> [!TIP]
+> This can be useful for auto switching strategies when connecting to a different network: for example, switching from Wi-Fi to mobile data. These scenarios are implemented using dedicated apps, example: with using `MacroDroid`.
+
+### <a id="automatic-switching">Auto switch strategy on disconnect/connect Wi-Fi</a>
+
+There are often cases when to Wi-Fi need one strategy, but on use mobile data need other strategy. Below is there script for MacroDroid, that change pinned strategies which depends on using Wi-Fi status.
+
+To use script download [file](https://github.com/BDManual/ByeByeDPI-Manual/blob/main/automatic_switching.category) and import to MacroDroid
+
+### <a id="youtube-autostart">Auto start ByeByeDPI on launch YouTube</a>
+
+In ByeByeDPI there is no auto connect on launch YouTube, but this real make with `MacroDroid`.
+
+> [!WARNING]
+> Need remove the restriction to work app on background mode
+
+Activity connect/disconnect in ByeByeDPI - ToggleActivity.
+
+Example:
+
+<img src="images/Pasted image 20250302183357.png" width="400">
+
+You can make condition: if VPN disconnected and YouTube don't launched, also using ToggleActivity
+
+<img src="images/Pasted image 20250302183552.png" width="400">
+
