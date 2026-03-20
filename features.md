@@ -706,9 +706,9 @@ IP устройства также можно узнать в настройка
 - Откройте настройки ByeByeDPI
   - <img src="images/bbd-settings-down.jpg" width="200">
 - Нажмите на "Работа с файлами"
-  - <img src="images/storage-acsess-button.jpg" width="200">
+  - <img src="images/storage-access-button.jpg" width="200">
 - Активируйте тумблер
-  - <img src="images/storage-acsess-tumbler.jpg" width="200">
+  - <img src="images/storage-access-tumbler.jpg" width="200">
   
 Теперь вы можете вставить в стратегию путь к файлу.
 
