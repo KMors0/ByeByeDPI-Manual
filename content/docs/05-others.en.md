@@ -267,6 +267,8 @@ On iOS, there is [Rumble](https://iklassika.ru/app.php?id=5833) — apparently, 
 > [!CAUTION]
 > There is no reliable information about the security of **Rumble**. Install the application at your own risk.
 
+There also is a [SwByeDPI](https://github.com/mIwr/SwByeDPI) from mlwr. This app has been vibe-coded, so there may be stability issues.
+
 ### Options for iOS users:
 
 - Use a VPN — simple and requires no technical knowledge.
