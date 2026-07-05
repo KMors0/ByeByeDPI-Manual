@@ -264,7 +264,7 @@ weight: 8
 
 ### На Mac
 
-- [Darkware Zapret](https://github.com/roninreilly/darkware-zapret) от roninreilly. Содержит несколько стратегий для tpws и несколько стратегий для ByeDPI. Так как нет возможности использовать свои стратегии - очень ограниченный инструмент, но есть вероятность, что поможет.
+- [Darkware Zapret](https://github.com/roninreilly/darkware-zapret) от roninreilly. Содержит tpws из состава zapret1 и ByeDPI.
 - [ByeDPI](https://github.com/hufrea/byedpi) от hufrea
 - [zapret](https://github.com/bol-van/zapret/blob/master/docs/bsd.md#macos) от bol-van
 - [NoDPI](https://github.com/GVCoder09/NoDPI) от GVCoder09
@@ -430,9 +430,6 @@ rm ~/Library/LaunchAgents/com.user.ciadpi.plist
 - Раздать доступ к ByeByeDPI с Android-устройства. Данный вариант подойдёт, если есть устройство на Android с настроенным ByeByeDPI. Подробная инструкция [здесь](/docs/03-features/#раздача-интернета-с-byebyedpi-локальный-прокси)
 - Использовать решения по [обходу DPI на роутере](#other-router)
 - Использовать решения по [обходу DPI на домашнем сервере](#other-home-server) (в качестве сервера может выступать ПК)
-
-> [!NOTE]
-> Если приобрести белый IP у провайдера, то можно будет настроить VPN-туннель до роутера и выходит в интернет с телефона через роутер с настроенным средством обхода
 
 ## "Стандартный редактор" - нужен ли?
 
