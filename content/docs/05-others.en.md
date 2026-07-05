@@ -267,9 +267,16 @@ On iOS, there is [Rumble](https://iklassika.ru/app.php?id=5833) — apparently, 
 > [!CAUTION]
 > There is no reliable information about the security of **Rumble**. Install the application at your own risk.
 
-There also is a [SwByeDPI](https://github.com/mIwr/SwByeDPI) from mlwr. This app has been vibe-coded, so there may be stability issues.
+### vibe-coded
 
-### Options for iOS users:
+> [!CAUTION]
+> The following apps are vibe-coded (written by AI). As a reminder: these apps weren't human checked, there may be security and/or stability issues. Report them to the respective authors. Proceed with caution.
+
+- [SwByeDPI](https://github.com/mIwr/SwByeDPI) by mlwr. This app uses byedpi to work. That means the strategies from ByeByeDPI may work there.
+
+- [Spoofy](https://github.com/ringolol/Spoofy) by ringolol. This app uses spoofdpi.
+
+### Other options for iOS users:
 
 - Use a VPN — simple and requires no technical knowledge.
 - Share access from an Android device running ByeByeDPI. See [this guide](features.en.md#sharing-internet-with-byebyedpi-local-proxy) for details.
